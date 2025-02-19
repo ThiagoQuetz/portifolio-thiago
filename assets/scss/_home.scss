@@ -1,0 +1,105 @@
+#s-home {
+  padding: 0px 50px;
+  
+  position: relative;
+  
+
+  @include responsive-tablet {
+    padding: 100px 20px 0px 20px;
+  }
+
+  .grid-layout {
+    #home {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      min-height: 90vh;
+      padding: 200px 0px;
+      overflow: hidden;
+      width: 100%;
+
+
+      @include responsive-tablet {
+        padding: 0px;
+      }
+
+      #home-container-text {
+        width: 100%;
+        flex-direction: column;
+
+        @include responsive-tablet {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          width: 100%;
+          text-align: center;
+          padding: 0px;
+        }
+
+        h3 {
+          font-family: $font-secondary;
+          color: #fff;
+          font-size: 3.2rem;
+          line-height: 140%;
+          font-weight: 400;
+
+          b {
+            color: #7360DF;
+          }
+
+          @include responsive-tablet {
+            font-size: 2.4rem;
+          }
+        }
+
+        h2 {
+          font-family: $font-secondary;
+          color: #fff;
+          line-height: 140%;
+
+          font: {
+            size: 6.4rem;
+            weight: 500;
+          }
+
+          @include responsive-tablet {
+            font-size: 4rem;
+          }
+        }
+
+        p {
+          color: $color-white;
+          font-size: 2rem;
+          max-width: 600px;
+          margin: 0 auto;
+          font-weight: 400;
+          line-height: 160%;
+          padding: 24px 0 48px 0;
+        }
+
+        a {
+          @include flexbox-center;
+          background: $color-main;
+          color: #fff;
+          padding: 20px 32px;
+          max-width: 300px;
+          border-radius: 4px;
+          transition: all 0.4s ease;
+
+          margin: 0 auto;
+
+          font: {
+            size: 18px;
+            weight: 600;
+          }
+
+          &:hover {
+            padding: 20px 45px;
+            max-width: 325px;
+          }
+        }
+      }
+    }
+  }
+}

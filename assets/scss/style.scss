@@ -1,0 +1,14 @@
+@import "./variables", "./reset", "./menu", "./home", "./about", "./projects",
+  "./skills", "./contact", "./footer", "./services";
+
+.grid-layout {
+  @include grid-layout();
+}
+
+.sombra {
+  position: absolute;
+  top: -50%;
+  left: 50%;
+  transform: translate(-50%, -30%);
+  z-index: -3;
+}

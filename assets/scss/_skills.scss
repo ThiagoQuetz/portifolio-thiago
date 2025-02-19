@@ -1,0 +1,51 @@
+#s-skills {
+  width: 100%;
+  height: auto;
+  background-color: $bg-main;
+  color: $color-white;
+  padding: 120px 20px;
+
+  h2 {
+    font-size: 4.8rem;
+    text-align: center;
+    font-weight: 500;
+    font-family: $font-secondary;
+    margin-bottom: 72px;
+
+    @include responsive-tablet {
+      font-size: 4rem;
+    }
+  }
+
+  .grid-layout {
+    .skills-1 {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      gap: 0px 24px;
+      @include responsive-tablet {
+        flex-wrap: wrap;
+      }
+
+      > div {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-bottom: 24px;
+
+        article {
+          background-color: #212227;
+          border-radius: 40px;
+          padding: 8px 20px;
+          display: flex;
+          align-items: center;
+          gap: 12px;
+
+          p {
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+}
